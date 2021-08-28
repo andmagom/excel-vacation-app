@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vacaciones!</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="process.js"></script>
+</head>
+
+<body>
+  <h1 id="title">Vacaciones !</h1>
+  <div id="main">
+    <label id="cedula">Cédula:</label>
+
+    <input type="number" id="cedula-input" name="cedula">
+    <button id="search" onclick="processFile()">Buscar</button>
+    <h3>Archivo de excel cargado: <span id="excel-found"></span> </h3>
+    <br>
+    <table id=result>
+      <tr>
+        <th>Nombre</th>
+        <th>Hoja</th>
+        <th>Fecha Salida</th>
+        <th>Dias tiempo</th>
+        <th>Observaciones</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- <textarea id="result" readonly cols="60" rows="10">...</textarea> -->
+  </div>
+
+</body>
+
+</html>
